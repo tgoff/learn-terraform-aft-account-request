@@ -19,7 +19,7 @@ module "aft-account" {
     ManagedOrganizationalUnit = var.managed-organizational-unit
     SSOUserEmail              = var.sso-user-email
     SSOUserFirstName          = var.sso-user-first-name
-    SSOUserLastName           = sso-user-last-nane
+    SSOUserLastName           = var.sso-user-last-name
   }
 
   account_tags = {
