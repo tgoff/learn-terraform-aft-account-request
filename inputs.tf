@@ -30,7 +30,7 @@ variable "sso-user-email" {
   
 }
 
-variable "sso.user-first-name" {
+variable "sso-user-first-name" {
   
 }
 
