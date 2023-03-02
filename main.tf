@@ -1,7 +1,7 @@
 locals {
   alternate_contact = jsonencode(
     {
-      "operations"= {
+      "operations" = {
         "email-address" = var.operations-email-address,
         "name"          = var.operations-name,
         "phone-number"  = var.operations-phone-number,
@@ -23,7 +23,7 @@ module "aft-account" {
   }
 
   account_tags = {
-    "managed-by-aft"       = "true"
+    "managed-by-aft" = "true"
   }
 
   change_management_parameters = {
@@ -32,7 +32,7 @@ module "aft-account" {
   }
 
   custom_fields = {
-    group = "non-prod"
+    group             = "non-prod"
     alternate_contact = local.alternate_contact
   }
 
