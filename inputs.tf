@@ -23,7 +23,7 @@ variable "account-name" {
 }
 
 variable "managed-organizational-unit" {
-  default = ""
+
 }
 
 variable "sso-user-email" {
