@@ -14,8 +14,8 @@ variable "operations-team-name" {
   default = ""
 }
 
-variable "account-email" {
-
+variable "account-email-base" {
+  default = ""
 }
 
 variable "account-name" {
@@ -23,7 +23,7 @@ variable "account-name" {
 }
 
 variable "managed-organizational-unit" {
-
+  default = ""
 }
 
 variable "sso-user-email" {
@@ -43,7 +43,7 @@ variable "requestor-name" {
 }
 
 variable "request-comment" {
-  default = ""
+  default = "Requesting a new account"
 }
 
 variable "account-customization-name" {

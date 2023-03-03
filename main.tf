@@ -14,7 +14,7 @@ locals {
 module "aft-account" {
   source = "./modules/aft-account-request"
   control_tower_parameters = {
-    AccountEmail              = var.account-email
+    AccountEmail              = "${var.account-name}${var.account-email-base}"
     AccountName               = var.account-name
     ManagedOrganizationalUnit = var.managed-organizational-unit
     SSOUserEmail              = var.sso-user-email
