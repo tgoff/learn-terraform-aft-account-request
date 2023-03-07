@@ -22,10 +22,6 @@ variable "account-name" {
 
 }
 
-variable "managed-organizational-unit" {
-
-}
-
 variable "sso-user-email" {
 
 }
@@ -50,6 +46,10 @@ variable "account-customization-name" {
   default = "sandbox"
 }
 
+# These defaults will not work, but are being set to avoid them beinf presented as options in the no-code UI.  Assume these will be overridden by env vars
 variable "aft-exec-role-arn" {
-  
+  default = ""
+}
+variable "managed-organizational-unit" {
+  default = ""
 }
