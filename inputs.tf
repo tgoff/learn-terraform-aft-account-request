@@ -49,3 +49,7 @@ variable "request-comment" {
 variable "account-customization-name" {
   default = "sandbox"
 }
+
+variable "aft-exec-role-arn" {
+  
+}
